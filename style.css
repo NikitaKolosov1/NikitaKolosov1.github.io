@@ -1,0 +1,98 @@
+body {
+    margin: 0; /* убираем внешний отступ (по бокам) */
+    font-family: 'Inconsolata', cursive; system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    padding: 0; /* убираем отступ слева от списка */
+    margin: 0; /* убираем область отпуста сверху, которая образуется из-за списка */
+    list-style: none; /* убираем точки */
+}
+
+.header li { /* добавили header, чтобы ol в body выравнивался не в одну линию, как меню*/
+    display: inline; /* выравниванием меню с одну строку */
+    margin-right: 60px; /* отступы между пунктами меню */
+}
+
+li:last-child { /* псевдокласс, last child применяется к ul, т.к. li вложен в ul*/
+    margin-right: 0;
+}
+
+.header { /* обращение не к header, а к классу header */
+    font-family: 'Tektur', cursive; system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #30d5c8;
+    padding: 20px 0; /* составное свойство, чтобы не прописывать для 4 сторон отдельно */
+    letter-spacing: 2px; /* добавление пробелов между буквами */
+    text-transform: uppercase; /* преобразование текста в верхний регистр */
+    border-bottom: 5px solid #30d5c8; /* добавление нижней границы */
+    box-shadow: 0px 0px 10px #30d5c8(0, 0, 0, 0.5); 
+    font-size: 1.25rem;
+    background-image: url(images/konatapc.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; /* это свойство центрирует ваше фоновое изображение */
+}
+
+/* контекстный селектор: */
+.main-menu a { /* применяем только к тегам а внутри меню, вложенность не имеет значения*/
+    text-decoration: none; /* убираем подчеркивания */
+    color: #30d5c8; /* цвет ссылок */
+    font-weight: bold; 
+}
+
+.container {
+    max-width: 75%; /* ограничиваем область nav*/
+    margin: 0 auto; 
+}
+
+.footer {
+    background-color:#30d5c8 (255, 66, 14);
+    color: #30d5c8;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.avatar {
+    height: 300px;
+    text-align: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    color: #30d5c8;
+    border: 2px solid #30d5c8 ;
+    padding: 10px;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #30d5c8;
+    border: 5px;
+    padding: 100px;
+    border-color: #30d5c8;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #30d5c8;
+    color: #202020;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mx-auto {
+    margin-right: auto;
+}
